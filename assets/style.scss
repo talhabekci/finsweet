@@ -1,0 +1,85 @@
+* {
+    font-family: "Sen";
+}
+
+$primary: #232536;
+$secondary: #ffd050;
+$success: #9ccc00;
+$info: #592ea9;
+$dark-gray: #4c4c4c;
+$medium-gray: #6d6e76;
+$light: #f4f4f4;
+$lavender: #f4f0f8;
+$dark: #000000;
+$light-yellow: #fbf6ea;
+$white: #fff;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "dark-gray": $dark-gray,
+    "medium-gray": $medium-gray,
+    "light": $light,
+    "lavender": $lavender,
+    "dark": $dark,
+    "light-yellow": $light-yellow,
+    "white": $white,
+) !default;
+
+.btn-lg {
+    padding: 16px 48px !important;
+}
+
+.content-section {
+    padding: 4rem 0rem;
+}
+
+.header-section {
+    margin-top: 80px;
+    width: 100%;
+    background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.6),
+            rgba(67, 67, 67, 0.6)
+        ),
+        url("../img/slider-1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-content {
+    padding: 128px 0px;
+}
+
+.horizontal-line {
+    height: 23px;
+}
+
+.row-content {
+    padding: 95px 80px;
+}
+
+.posts {
+    &:hover {
+        background-color: $light-yellow;
+        cursor: pointer;
+    }
+}
+
+.category {
+    &:hover {
+        background-color: $secondary;
+        cursor: pointer;
+    }
+}
+
+$btn-padding-y: 16px;
+$btn-padding-x: 48px;
+
+@import "bootstrap/scss/bootstrap.scss";
+@import "font_family.scss";
